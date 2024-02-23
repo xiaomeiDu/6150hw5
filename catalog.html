@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Catalog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header with Welcome Picture -->
     <header>
-      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Library-logo.svg/884px-Library-logo.svg.png?20131230170104" alt="Vallejo Public Library Logo">
+      <img
+        class="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Library-logo.svg/884px-Library-logo.svg.png?20131230170104"
+        alt="Vallejo Public Library Logo"
+      />
       <h1>Book Catalog</h1>
       <nav>
         <a href="index.html">Home</a>
@@ -21,71 +23,85 @@
         <a href="catalog.html">Book Catalog</a>
       </nav>
       <form class="search-form" action="/search" method="get">
-        <input type="text" name="q" placeholder="Search for a book">
+        <input type="text" name="q" placeholder="Search for a book" />
       </form>
     </header>
 
     <!-- Book Catalog Section -->
     <section id="bookCatalog">
       <div class="book">
-          <h3>Title: The Great Gatsby</h3>
-          <p>Author: F. Scott Fitzgerald</p>
-          <p>Genre: Fiction</p>
-          <p>Description: A classic novel exploring themes of wealth, love, and the American Dream.</p>
-          <p>Total Copies: <span id="totalCopies1">10</span></p>
-          <p>Copies Available: <span id="copiesAvailable1">5</span></p>
-          <button data-index="1"onclick="reserveBook(1)">Reserve</button>
+        <h3>Title: The Great Gatsby</h3>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Genre: Fiction</p>
+        <p>
+          Description: A classic novel exploring themes of wealth, love, and the
+          American Dream.
+        </p>
+        <p>Total Copies: <span id="totalCopies1">10</span></p>
+        <p>Copies Available: <span id="copiesAvailable1">5</span></p>
+        <button data-index="1" onclick="reserveBook(1)">Reserve</button>
       </div>
 
       <div class="book">
-          <h3>Title: To Kill a Mockingbird</h3>
-          <p>Author: Harper Lee</p>
-          <p>Genre: Fiction</p>
-          <p>Description: A poignant novel addressing racial injustice and moral growth in the American South.</p>
-          <p>Published Year: 1960</p>
-          <p>Total Copies: <span id="totalCopies2">8</span></p>
-          <p>Copies Available: <span id="copiesAvailable2">3</span></p>
-          <button data-index="2" onclick="reserveBook(2)">Reserve</button>
+        <h3>Title: To Kill a Mockingbird</h3>
+        <p>Author: Harper Lee</p>
+        <p>Genre: Fiction</p>
+        <p>
+          Description: A poignant novel addressing racial injustice and moral
+          growth in the American South.
+        </p>
+        <p>Published Year: 1960</p>
+        <p>Total Copies: <span id="totalCopies2">8</span></p>
+        <p>Copies Available: <span id="copiesAvailable2">3</span></p>
+        <button data-index="2" onclick="reserveBook(2)">Reserve</button>
       </div>
 
       <div class="book">
-          <h3>Title: 1984</h3>
-          <p>Author: George Orwell</p>
-          <p>Genre: Dystopian Fiction</p>
-          <p>Description: A dystopian masterpiece exploring the consequences of totalitarianism.</p>
-          <p>Published Year: 1949</p>
-          <p>Total Copies: <span id="totalCopies3">12</span></p>
-          <p>Copies Available: <span id="copiesAvailable3">8</span></p>
-          <button data-index="3" onclick="reserveBook(3)">Reserve</button>
+        <h3>Title: 1984</h3>
+        <p>Author: George Orwell</p>
+        <p>Genre: Dystopian Fiction</p>
+        <p>
+          Description: A dystopian masterpiece exploring the consequences of
+          totalitarianism.
+        </p>
+        <p>Published Year: 1949</p>
+        <p>Total Copies: <span id="totalCopies3">12</span></p>
+        <p>Copies Available: <span id="copiesAvailable3">8</span></p>
+        <button data-index="3" onclick="reserveBook(3)">Reserve</button>
       </div>
 
       <div class="book">
-          <h3>Title: Pride and Prejudice</h3>
-          <p>Author: Jane Austen</p>
-          <p>Genre: Romance</p>
-          <p>Description: A timeless classic exploring love, class, and societal expectations.</p>
-          <p>Published Year: 1813</p>
-          <p>Total Copies: <span id="totalCopies4">15</span></p>
-          <p>Copies Available: <span id="copiesAvailable4">10</span></p>
-          <button data-index="4" onclick="reserveBook(4)">Reserve</button>
+        <h3>Title: Pride and Prejudice</h3>
+        <p>Author: Jane Austen</p>
+        <p>Genre: Romance</p>
+        <p>
+          Description: A timeless classic exploring love, class, and societal
+          expectations.
+        </p>
+        <p>Published Year: 1813</p>
+        <p>Total Copies: <span id="totalCopies4">15</span></p>
+        <p>Copies Available: <span id="copiesAvailable4">10</span></p>
+        <button data-index="4" onclick="reserveBook(4)">Reserve</button>
       </div>
 
       <div class="book">
-          <h3>Title: The Hobbit</h3>
-          <p>Author: J.R.R. Tolkien</p>
-          <p>Genre: Fantasy</p>
-          <p>Description: An adventurous tale of a hobbit's journey to reclaim treasure guarded by a dragon.</p>
-          <p>Published Year: 1937</p>
-          <p>Total Copies: <span id="totalCopies5">20</span></p>
-          <p>Copies Available: <span id="copiesAvailable5">15</span></p>
-          <button data-index="5" onclick="reserveBook(5)">Reserve</button>
+        <h3>Title: The Hobbit</h3>
+        <p>Author: J.R.R. Tolkien</p>
+        <p>Genre: Fantasy</p>
+        <p>
+          Description: An adventurous tale of a hobbit's journey to reclaim
+          treasure guarded by a dragon.
+        </p>
+        <p>Published Year: 1937</p>
+        <p>Total Copies: <span id="totalCopies5">20</span></p>
+        <p>Copies Available: <span id="copiesAvailable5">15</span></p>
+        <button data-index="5" onclick="reserveBook(5)">Reserve</button>
       </div>
-
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Vallejo Public Library</p>
+      <p>&copy; 2023 Vallejo Public Library</p>
     </footer>
 
     <!-- JavaScript for book reservation -->
@@ -108,29 +124,34 @@
           book.reserved++;
           updateCopiesDisplay(bookIndex, book.available, book.reserved);
 
-          var button = document.querySelector(`button[data-index='${bookIndex}']`);
+          var button = document.querySelector(
+            `button[data-index='${bookIndex}']`
+          );
           if (button) {
             button.textContent = "Reserved";
             button.disabled = true; // Optionally disable the button after reservation
           }
 
-          alert("Book Reserved! Please check your email for confirmation. You can pick up your reserved book at the library.");
+          alert(
+            "Book Reserved! Please check your email for confirmation. You can pick up your reserved book at the library."
+          );
         } else {
-          alert("Sorry, all copies of this book are currently reserved. Please try again later.");
+          alert(
+            "Sorry, all copies of this book are currently reserved. Please try again later."
+          );
         }
       }
 
       // Function to update copies display
       function updateCopiesDisplay(bookIndex, copiesAvailable, copiesReserved) {
-        const copiesAvailableSpan = document.getElementById(`copiesAvailable${bookIndex}`);
+        const copiesAvailableSpan = document.getElementById(
+          `copiesAvailable${bookIndex}`
+        );
 
         if (copiesAvailableSpan) {
           copiesAvailableSpan.textContent = copiesAvailable;
         }
       }
-
     </script>
-
-</body>
-
+  </body>
 </html>
